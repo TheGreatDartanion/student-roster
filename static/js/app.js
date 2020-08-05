@@ -11,4 +11,6 @@ d3.json('api/data/students').then(data => {
         });
     });
 
+    console.log(db_name);
+
 });
