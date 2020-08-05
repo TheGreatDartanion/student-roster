@@ -12,5 +12,9 @@ d3.json('api/data/students').then(data => {
     });
 
     console.log(`In Script: ${db_name}`)
+    
+    var env_var = ENV['remote_db_user'];
+    console.log(`ENVs: ${env_var}`)
+
 
 });

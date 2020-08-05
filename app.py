@@ -41,7 +41,7 @@ app = Flask(__name__)
 # Set up your default route
 @app.route('/')
 def home():
-    return render_template('index.html', db_name='foo')
+    return render_template('index.html', db_name=remote_db_name)
 
 @app.route('/api/data/students')
 def get_students():
